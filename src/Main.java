@@ -10,9 +10,25 @@ public class Main {
         int smallest = c < (a < b ? a : b) ? c : ((a < b) ? a : b);
         return smallest;
     }
+    public static void prime(int j) {
+        int flag = 0;
+        for (int i = 1; i <= j; i++) {
+            if (j % i == 0) {
+                flag++;
+            }
+        }
+        if (flag == 2) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not prime");
+        }
+    }
 
 
 
     public static void main(String[] args) {
-        System.out.println("hi");
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int num=scan.nextInt();
+        scan.close();
 }}
