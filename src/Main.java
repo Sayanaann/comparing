@@ -5,6 +5,11 @@ public class Main {
         int largest = c > (a > b ? a : b) ? c : ((a > b) ? a : b);
         return largest;
     }
+    public static int smallest(int a,int b,int c) {
+
+        int smallest = c < (a < b ? a : b) ? c : ((a < b) ? a : b);
+        return smallest;
+    }
 
 
 
