@@ -23,7 +23,16 @@ public class Main {
             System.out.println("Not prime");
         }
     }
-
+    public static void reverse(int i){
+        int rev =0;
+        int rem;
+        while (i != 0) {
+            rem = i % 10;
+            rev = rev * 10 + rem;
+            i /= 10;
+        }
+        System.out.println(rev);
+    }
 
 
     public static void main(String[] args) {
